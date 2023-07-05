@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: 1s;
+}
+
+textarea:focus,
+input:focus {
+    outline: none;
+}
+
+
+ul li,
+ol li {
+    list-style-type: none;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+button {
+    display: block;
+    border: none;
+    color: inherit;
+    font: inherit;
+    background-color: transparent;
+    transition: 1s;
+    cursor: pointer;
+}
+
+body {
+    color: white;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: 30px;
+    line-height: 150%;
+    letter-spacing: 4.5px;
+}
+
+.btn-primary {
+    background: #DB2512;
+    width: 198px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+.btn-primary:hover {
+    background: #db4a3a;
+}
+
+/* Header */
+#header-section {
+    background: url(/img/header-background.jpg);
+    background-size: cover;
+    height: 750px;
+    background-repeat: no-repeat;
+}
+
+.header-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-logo {
+    margin: 22px 0 0 0;
+    width: 139px;
+    height: 65px;
+}
+
+.header-list {
+    display: flex;
+    gap: 35px;
+    margin-top: 41px;
+}
+
+.header_list-item {
+    color: #FFF;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.header_list-item:not(:first-child) {
+    cursor: pointer;
+}
+
+.header_list-item:hover:not(:first-child) {
+    color: #B7B7B7;
+}
+
+.header_list-item-selected {
+    position: relative;
+}
+
+.header_list-item-selected::after {
+    position: absolute;
+    content: "";
+    border-bottom: 2px solid white;
+    bottom: 21px;
+    left: 0;
+    width: 39px;
+}
+
+.lang-wrap {
+    display: flex;
+    gap: 8px;
+}
+
+.lang-btn {
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.selected-lang-btn {
+    color: #B7B7B7;
+}
+
+.welcome-title {
+    font-size: 48px;
+    max-width: 791px;
+    margin: 153px auto 53px 0;
+}
+
+.btn-welcome {
+    margin: 0 auto 83px 0;
+}
+
+/* Info */
+.info-wrap {
+    display: flex;
+    gap: 21px;
+}
+
+.info-box {
+    background: #FFF;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25);
+    padding: 39px;
+    max-width: 386px;
+    cursor: pointer;
+}
+
+.info-logo {
+    margin: 0 315px 21px 0;
+    width: 30px;
+    height: 30px;
+}
+
+.info-title {
+    color: #000;
+    font-size: 18px;
+    letter-spacing: 2.7px;
+    margin-bottom: 15px;
+}
+
+.info-text {
+    color: #B7B7B7;
+    font-size: 18px;
+}
+
+/* Services */
+.services-name {
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 4.6px;
+    margin-top: 21px;
+}
+
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    gap: 21px;
+}
+
+.services-title {
+    margin: 197px auto 15px 0;
+    color: rgba(0, 0, 0, 1);
+}
+
+.services-link {
+    color: #000;
+    display: block;
+    font-size: 15px;
+    letter-spacing: 2.25px;
+    text-decoration-line: underline;
+    margin: 0 auto 60px 0;
+}
+
+.services-item {
+    margin-bottom: 98px;
+}
+
+/* Ads */
+#ads-section {
+    background: #171616;
+}
+
+.ads-section-wrap {
+    display: flex;
+    gap: 182px;
+    padding: 117px 0;
+}
+
+.ads-title {
+    margin-bottom: 42px;
+}
+
+.ads-text {
+    color: #B7B7B7;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: 3.45px;
+    margin-bottom: 48px;
+}
+
+.ads-link {
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 2.7px;
+    text-decoration-line: underline;
+    color: rgba(255, 255, 255, 1);
+}
+
+.services-link:hover,
+.ads-link:hover {
+    color: #B7B7B7;
+}
+
+/* Process */
+#process-section {
+    padding: 99px 0;
+}
+
+.process-title {
+    line-height: 150%;
+    color: #000;
+    font-size: 148px;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 38px;
+}
+
+.process-sub-text {
+    color: #000;
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    margin-bottom: 92px;
+    text-align: center;
+}
+
+.process-boxes-wrap {
+    justify-content: space-between;
+}
+
+.process-box {
+    cursor: default;
+    padding: 30px;
+}
+
+/* Contact */
+#contact-section {
+    padding: 97px;
+    background-color: rgba(23, 22, 22, 1);
+}
+
+.contact-wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-title {
+    margin-bottom: 47px;
+    text-transform: uppercase;
+}
+
+.bio-input {
+    background-color: rgba(23, 22, 22, 1);
+    border: none;
+    border-bottom: 1px solid #fff;
+    margin-right: 46px;
+    color: #FFF;
+    font-size: 15px;
+    line-height: 150%;
+    letter-spacing: 2.25px;
+}
+
+.contact-bio-wrap {
+    margin-bottom: 54px
+}
+
+.bio-first-line {
+    margin-bottom: 27px;
+}
+
+.bio-message {
+    font-family: Poppins;
+    padding-bottom: 110px;
+    max-width: 440px;
+    margin-bottom: 37px;
+}
+
+/* Footer */
+.footer-text {
+    color: #000;
+    font-size: 15px;
+    line-height: 150%;
+    letter-spacing: 2.25px;
+    margin: 66px 0 61px 0;
+}
+
+
+.footer-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-icons-wrap {
+    display: flex;
+    gap: 21px;
+}
+
+.footer-logo {
+    width: 25px;
+    height: 25px;
+}
+
+/* Test */
+.services-item {
+    position: relative;
+}
+
+.services_img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: filter 0.3s;
+}
+
+.services_img:hover {
+    filter: brightness(60%);
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.services-item:hover .image-overlay {
+    opacity: 1;
+}
+
+.overlay-content {
+    padding: 32px 29px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.overlay-title {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: 4.14px;
+    width: 269px;
+    text-align: left;
+}
+
+.plus-logo {
+    background: #DB2512;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 40px;
+}
+
+.overlay-button{
+    margin: 165px auto 60px;
+    display: block;
+}
